@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>isoPortraits</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.css" integrity="sha256-+dIh4jG2jQTHZwW81yUo8h6tzXWcNumyNL5XPZbwp1E=" crossorigin="anonymous" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="main.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.js" integrity="sha256-caNcSA0LvOCX90PTuEbwl+V09xPMca13CJUasl+VCtk=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="fullpage">
+        <div id="call">
+            <div id="videoDiv">
+                <video loop muted autoplay poster="bkg1.jpg" id="video">
+                    <source src="bkg1.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div id="callContainer">
+                <div></div>
+                <div id="title">
+                    <p id="call1">You are invited to</p>
+                    <p id="call2">PARTICIPATE</p>
+                    <p id="call3">in an exercise of collective memory making</p>
+                </div>
+                <div id="buttons">
+                    <a id="whatBtn" class="button" href="#aWhat">WHAT</a>
+                    <a id="howBtn" class="button" href="#aHow">HOW</a>
+                    <a id="doItBtn" class="button" href="#aDoIt">DO IT</a>
+                </div>
+            </div>
+        </div>
+        <div id="what">
+        </div>
+        <div id="how"></div>
+        <div id="doIt"></div>
+    </div>
+    <script>
+        new fullpage('#fullpage', {
+            navigation: true,
+            navigationTooltips: ['Top', 'What', 'How', 'Do It!'],
+            anchors: ['aTop', 'aWhat', 'aHow', 'aDoIt']
+        })
+    </script>
+</body>
+</html>

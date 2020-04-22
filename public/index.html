@@ -6,46 +6,106 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>isoPortraits</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.css" integrity="sha256-+dIh4jG2jQTHZwW81yUo8h6tzXWcNumyNL5XPZbwp1E=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="wp-includes/reflectionConnection/css/styles.css">
+    <link rel="stylesheet" href="wp-includes/reflectionConnection/css/reset.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.css" integrity="sha256-+dIh4jG2jQTHZwW81yUo8h6tzXWcNumyNL5XPZbwp1E=" crossorigin="anonymous" /> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script src="main.js" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.js" integrity="sha256-caNcSA0LvOCX90PTuEbwl+V09xPMca13CJUasl+VCtk=" crossorigin="anonymous"></script>
+    <script src="wp-includes/reflectionConnection/js/main.js" defer></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.js" integrity="sha256-caNcSA0LvOCX90PTuEbwl+V09xPMca13CJUasl+VCtk=" crossorigin="anonymous"></script> -->
 </head>
 <body>
-    <div id="fullpage">
+    <!-- <div id="fullpage"> -->
         <div id="call" class="section">
             <div id="videoDiv">
-                <video loop muted autoplay poster="bkg1.jpg" id="video">
-                    <source src="bkg1.mp4" type="video/mp4">
+                <video loop muted autoplay poster="wp-content/reflectionConnection/bkg1.jpg" id="video">
+                    <source src="wp-content/reflectionConnection/bkg1.mp4" type="video/mp4">
                 </video>
             </div>
             <div id="callContainer">
                 <div></div>
                 <div id="title">
                     <p id="call1">You are invited to</p>
-                    <p id="call2">PARTICIPATE</p>
+                    <h1 id="call2">PARTICIPATE</h1>
                     <p id="call3">in an exercise of collective memory making</p>
                 </div>
-                <div id="buttons">
-                    <a id="whatBtn" class="button" href="#aWhat">WHAT</a>
-                    <a id="howBtn" class="button" href="#aHow">HOW</a>
-                    <a id="doItBtn" class="button" href="#aDoIt">DO IT</a>
+                <div class=buttons>
+                    <a id="whatBtn" class="button" href="#" data-link="1">WHAT</a>
+                    <a id="howBtn" class="button" href="#" data-link="2">HOW</a>
+                    <a id="doItBtn" class="button" href="#" data-link="3">UPLOAD</a>
                 </div>
             </div>
         </div>
-        <div id="what"  class="section">
+        <div id="what"  class="section grid2">
+            <p id="whatHeader" class="myH2 g2Header">Reflection/Connection</p>
+            <div id="whatDescription" class="g2Description">
+                    Reflection/Connection is a participatory community art project, 
+                    an exercise in collective memory making for this time in isolation. 
+                    You are invited to contribute a short video self-portrait of 10-20s, 
+                    which will be filtered with through piece of generative code art, schemaVideoVariabile, 
+                    and added to the  Reflection/Connection collection. Initially the collection will be 
+                    displayed on a dedicated Instagram account and on this website, ideally the 
+                    filtered video portraits will be presented in a physical installation 
+                    some time in the future when that becomes possible again.
+            </div>
+            <div id="whatButtons" class="buttons g2Buttons">
+                <a id="topBtn" class="button" href="#" data-link="0">TOP</a>
+                <a id="howBtn" class="button" href="#" data-link="2">HOW</a>
+                <a id="doItBtn" class="button" href="#" data-link="3">UPLOAD</a>
+            </div>
         </div>
-        <div id="how"  class="section"></div>
-        <div id="doIt"  class="section"></div>
-    </div>
-    <script>
-        new fullpage('#fullpage', {
-            navigation: true,
-            navigationTooltips: ['Top', 'What', 'How', 'Do It!'],
-            anchors: ['aTop', 'aWhat', 'aHow', 'aDoIt']
-        })
-    </script>
+        <div id="how"  class="section grid3">
+                <div id="howHeader" class="g2Header">How to Shoot the Self-Portrait</div>
+                <div id="howDescription" class="g2Description">
+                        This will take 5 minutes. There is no need to rush.
+                        <br>
+                        <ul>
+                            <li>Get comfortable.</li>
+                            <li>Get your phone out, open the camera.</li>
+                            <li>Line up the shot, get ready to record.</li>
+                            <li>Close your eyes.</li>
+                            <li>Really take this moment to get settled.</li>
+                            <li>Notice the muscles in your face. Release any tension.</li>
+                            <li>Breathe</li>
+                            <li>Keep you eyes closed.</li>
+                            <li>Start recording.</li>
+                            <li>When you are ready, open your eyes.</li> 
+                            <li>Look directly into the camera, not the screen.</li>
+                            <li>Record for as long as you like</li>
+                        </ul>
+                        <br>
+                        Follow the instructions below to upload your file
+                    
+                    
+                </div>
+                <div id="howButtons" class="buttons g2Buttons">
+                    <a id="topBtn" class="button" href="#" data-link="0">TOP</a>
+                    <a id="whatBtn" class="button" href="#" data-link="1">WHAT</a>
+                    <a id="doItBtn" class="button" href="#" data-link="3">UPLOAD</a>
+                </div>
+            </div>
+        <div id="doIt"  class="section grid4">
+                <p id="doitHeader" class="myH2 g2Header">Upload Instructions</p>
+                <div id="doitDescription" class="g2Description">
+                        Please use <a href="https://wetransfer.com/">WeTransfer</a> to send your
+                        video to: reflectionconnectionproject@gmail.com 
+                        <br><br>
+                        In the message, please write something you would like to leave behind when we 
+                        come out of lockdown.
+                        <br><br>
+                        Your contribution will be anonymous by default.<br>
+                        If you would like to be credited, please include your name in the message.<br>
+                        If you would like to be tagged on instagram, please include your instagram handle.
+                        <br><br>
+                        The videos will become quite distorted, you will be hard to recognise, but not impossible. 
+                        <br>If you would prefer to be unrecognisable, please write "diguise me!" in your message.
+                        <br><br><br>
+                        <div class="centred"><a href="https://wetransfer.com/" class="button">Upload your file now</a></div>
+                </div>
+                <div id="whatButtons" class="buttons g2Buttons">
+                    <a id="topBtn" class="button" href="#" data-link="0">TOP</a>
+                    <a id="whatBtn" class="button" href="#" data-link="1">WHAT</a>
+                    <a id="howBtn" class="button" href="#" data-link="2">HOW</a>
+                </div></div>
+    <!-- </div> -->
 </body>
 </html>

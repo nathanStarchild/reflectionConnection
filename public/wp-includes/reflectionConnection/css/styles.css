@@ -1,0 +1,184 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    margin: 0px;
+    background-color: eggshell;
+    font-family: 'Inter', sans-serif !important;
+}
+
+#call {
+    height: 100%;
+    width: 100%;
+}
+
+#title {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+#videoDiv {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+
+#video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#callContainer {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr min-content 1fr;
+    background-color: rgba(0,0,0,0.2);
+}
+
+#call1 {
+    font-size: 6vmin;
+}
+
+#call2 {
+    font-size: 11vmin;
+    font-weight: 900;
+}
+
+#call3 {
+    font-size: 3.5vmin;
+}
+
+.buttons {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.button {
+    padding: 1vmin 3vmin;
+    text-align: center;
+    color: whitesmoke !important;
+    border-radius: 25px;
+    font-size: 2.5vmin;
+    font-weight: bold;
+    width: 11vmin;
+    background: #17a0d3;
+    margin: 0px 1vmin;
+    border: solid rgb(20, 127, 167) 1px;
+    text-decoration: none;
+}
+
+.button:hover {
+    font-size: 3vmin;
+    transition: all 0.4s ease 0s;
+    background: #34c9ff;
+}
+
+/* h1 {
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+} */
+
+.myH1 {
+    font-size: 6rem;
+    font-weight: 900;
+}
+
+.myH2 {
+    font-size: 8vmin;
+    font-weight: 900;
+}
+
+.grid2 {
+    display: grid;
+    grid-template-rows: 1fr 12vh min-content 1fr;
+    grid-template-columns: 1fr min-content 1fr;  
+}
+
+.grid3 {
+    display: grid;
+    grid-template-rows: 1fr max-content min-content 1fr;
+    grid-template-columns: 1fr max-content 1fr;  
+}
+
+
+@media screen and (max-width: 800px) {
+    .grid3 {
+        display: grid;
+        grid-template-rows: 1fr max-content min-content 1fr;
+        grid-template-columns: 1fr 85% 1fr;  
+    }
+}
+
+.grid4 {
+    display: grid;
+    grid-template-rows: 1fr max-content min-content 1fr;
+    grid-template-columns: minmax(5%, 1fr) minmax(min-content, 800px) minmax(5%, 1fr);  
+}
+
+.centred {
+    text-align: center;
+}
+
+#what{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(245, 245, 245, 0.9);
+}
+
+.g2Header {
+    grid-area: 2/2/3/3;
+}
+
+.g2Description {
+    grid-area: 3/2/4/3;
+}
+
+.g2Buttons {
+    grid-area: 4/2/5/3;
+}
+
+#how{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(10, 10, 10, 0.8);
+    color: whitesmoke;
+}
+
+#howHeader {
+    font-size: 4.5vmin;
+    font-weight: 600;
+}
+
+
+ul { 
+    list-style-type: disc !important; 
+    list-style-position: outside !important; 
+    margin-left: 20px !important;
+}
+
+#doIt{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(245, 245, 245, 0.9);
+}
